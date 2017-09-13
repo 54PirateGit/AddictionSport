@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackground"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--轮播图-->
+            <com.tianbao.addictionsport.widget.banner.Banner
+                android:id="@+id/banner"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"/>
+
+            <!--导航栏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/text_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="课程内容"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:background="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/text_coach"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="教练介绍"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:background="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/text_careful"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="注意事项"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:background="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/text_step"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="健身步骤"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:background="@color/blue"/>
+
+            </LinearLayout>
+
+            <!--课程内容-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="课程内容"
+                        android:textColor="@color/wordBlackColor"
+                        android:textSize="16sp"
+                        android:drawableLeft="@mipmap/image_class_content"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#eee"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image_cover"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:src="@mipmap/image_sport_head"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/image_cover"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_courses"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="哈他瑜伽"
+                                android:textColor="@color/blue"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/text_courses_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="地\t址：长沙大学城店"
+                                android:textColor="@color/wordBlackColor"
+                                android:singleLine="true"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="13sp"/>
+
+                            <TextView
+                                android:id="@+id/text_courses_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="时\t间：2017-8-7 18:10-19:10"
+                                android:singleLine="true"
+                                android:textColor="@color/wordBlackColor"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="13sp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/text_courses_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="价\t格： ￥19.9"
+                                    android:textColor="@color/wordBlackColor"
+                                    android:singleLine="true"
+                                    android:ellipsize="end"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/text_courses_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="（瘾卡￥40.25）"
+                                    android:layout_marginLeft="2dp"
+                                    android:textColor="@color/blue"
+                                    android:singleLine="true"
+                                    android:ellipsize="end"
+                                    android:visibility="gone"
+                                    android:textSize="13sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--教练介绍-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="教练介绍"
+                        android:textColor="@color/wordBlackColor"
+                        android:textSize="16sp"
+                        android:drawableLeft="@mipmap/image_coach_content"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#eee"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image_coach_head"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/image_sport_head"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@id/image_coach_head"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="25dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_coach_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="李丹"
+                                android:textColor="@color/black"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textSize="17sp"/>
+
+                            <TextView
+                                android:id="@+id/text_coach_introduce"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="冲瘾健身再度捕获一枚小钢炮！Lesmills四项认证教训：BodyComba，BodyPump，BodyJam，CXWorx。"
+                                android:textColor="@color/wordBlackColor"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--注意事项-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="注意事项"
+                        android:textColor="@color/wordBlackColor"
+                        android:textSize="16sp"
+                        android:drawableLeft="@mipmap/image_matters_content"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#eee"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/text_need_attention"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运动后排汗量增加，呼吸加速，口咽部水分蒸发较快，很多人会感觉口渴难耐。此时千万不能立即大量饮水。如果大量饮水会使胃部膨胀，胃酸浓度降低，引起腹部不适。同时，运动后心胀任然处于较激烈的运动状态，此时饮水量过大会使血流量加大，从而引起心脏负担过重。因此，可等心脏跳动平缓后，先以清水漱口，然后再慢慢少量的补充水分为好。"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--健身步骤-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="健身步骤"
+                        android:textColor="@color/wordBlackColor"
+                        android:textSize="16sp"
+                        android:drawableLeft="@mipmap/image_steps_content"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#eee"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image_flow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:src="@mipmap/image_flow"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/image_flow"
+                            android:layout_alignTop="@id/image_flow"
+                            android:layout_alignBottom="@id/image_flow">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="#eee"
+                                android:text="预约付费成功"
+                                android:gravity="center"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="4dp"
+                                android:textSize="15sp"
+                                android:textColor="@color/wordBlackColor"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="#eee"
+                                android:text="扫描门禁二维码"
+                                android:gravity="center"
+                                android:layout_centerInParent="true"
+                                android:textSize="15sp"
+                                android:textColor="@color/wordBlackColor"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="#eee"
+                                android:text="验证成功入场上课"
+                                android:gravity="center"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="15sp"
+                                android:textColor="@color/wordBlackColor"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btn_appointment"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue"
+                    android:text="立即预约"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/btn_shape"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:text="分享"
+                    android:textColor="@color/wordBlackColor"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

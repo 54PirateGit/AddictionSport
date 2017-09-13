@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_menu_bg"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_courses"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/courses"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            android:text="课程"/>
+
+        <TextView
+            android:id="@+id/txt_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/my"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            android:text="我的瘾"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_menu"
+        android:layout_below="@id/title"/>
+
+</RelativeLayout>
