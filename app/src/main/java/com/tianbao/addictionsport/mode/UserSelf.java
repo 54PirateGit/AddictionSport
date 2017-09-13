@@ -1,5 +1,6 @@
 package com.tianbao.addictionsport.mode;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -7,7 +8,7 @@ import java.util.List;
  * Created by edianzu on 2017/9/13.
  */
 
-public class UserSelf {
+public class UserSelf implements Serializable {
 
     /**
      * code : 200
@@ -43,7 +44,7 @@ public class UserSelf {
         this.message = message;
     }
 
-    public static class DataBean {
+    public static class DataBean implements Serializable {
         /**
          * beyond : 您已经超过 3 %同时健身的同学
          * calorieTotal : 0
@@ -128,7 +129,7 @@ public class UserSelf {
             this.orders = orders;
         }
 
-        public static class DurationTotalBean {
+        public static class DurationTotalBean implements Serializable {
             /**
              * fractionalPart : 1/4
              * intPart : 10
@@ -164,7 +165,7 @@ public class UserSelf {
             }
         }
 
-        public static class DurationWeekBean {
+        public static class DurationWeekBean implements Serializable {
             /**
              * fractionalPart : 2/4
              * intPart : 11
@@ -200,7 +201,7 @@ public class UserSelf {
             }
         }
 
-        public static class CardsBean {
+        public static class CardsBean implements Serializable {
             /**
              * button : {"disable":true,"title":"充值"}
              * cardId : 18
@@ -275,7 +276,7 @@ public class UserSelf {
                 this.type = type;
             }
 
-            public static class ButtonBean {
+            public static class ButtonBean implements Serializable {
                 /**
                  * disable : true
                  * title : 充值
@@ -302,7 +303,7 @@ public class UserSelf {
             }
         }
 
-        public static class OrdersBean {
+        public static class OrdersBean implements Serializable {
             /**
              * button : {"disable":true,"title":"取消预约"}
              * course : {"address":{"detailAddress":"湖南长沙市岳麓区麓山南路店299号渔湾码头时尚商业广场1层","latitude":"28.1692535039","longitude":"112.9443454742","name":"天马冲瘾店"},"button":{"disable":true,"title":"立即预约"},"coach":{"avatar":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=74372047,3915263719&fm=117&gp=0.jpg","id":1},"id":89,"price":"¥20","shortTime":"18.00-18.50","stock":30,"tags":["瑜珈","拉升"],"time":"2017-09-05 18.00-18.50","title":"Yin-Yang瑜伽1","yenPrice":"¥17"}
@@ -357,7 +358,7 @@ public class UserSelf {
                 this.personTime = personTime;
             }
 
-            public static class ButtonBeanX {
+            public static class ButtonBeanX implements Serializable {
                 /**
                  * disable : true
                  * title : 取消预约
@@ -383,7 +384,7 @@ public class UserSelf {
                 }
             }
 
-            public static class CourseBean {
+            public static class CourseBean implements Serializable {
                 /**
                  * address : {"detailAddress":"湖南长沙市岳麓区麓山南路店299号渔湾码头时尚商业广场1层","latitude":"28.1692535039","longitude":"112.9443454742","name":"天马冲瘾店"}
                  * button : {"disable":true,"title":"立即预约"}
@@ -498,7 +499,7 @@ public class UserSelf {
                     this.tags = tags;
                 }
 
-                public static class AddressBean {
+                public static class AddressBean implements Serializable {
                     /**
                      * detailAddress : 湖南长沙市岳麓区麓山南路店299号渔湾码头时尚商业广场1层
                      * latitude : 28.1692535039
@@ -544,7 +545,7 @@ public class UserSelf {
                     }
                 }
 
-                public static class ButtonBeanXX {
+                public static class ButtonBeanXX implements Serializable {
                     /**
                      * disable : true
                      * title : 立即预约
@@ -570,7 +571,7 @@ public class UserSelf {
                     }
                 }
 
-                public static class CoachBean {
+                public static class CoachBean implements Serializable {
                     /**
                      * avatar : https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=74372047,3915263719&fm=117&gp=0.jpg
                      * id : 1
@@ -597,7 +598,7 @@ public class UserSelf {
                 }
             }
 
-            public static class OrderBean {
+            public static class OrderBean implements Serializable {
                 /**
                  * createTime : 2017-09-03 23:07:22
                  * id : 48
@@ -643,7 +644,7 @@ public class UserSelf {
                 }
             }
 
-            public static class RealPayBean {
+            public static class RealPayBean implements Serializable {
                 /**
                  * fee : ¥0
                  * originFee : 0
@@ -679,7 +680,7 @@ public class UserSelf {
                 }
             }
 
-            public static class PersonTimeBean {
+            public static class PersonTimeBean implements Serializable {
                 /**
                  * num : 2
                  * select : true

@@ -40,6 +40,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/text_calorie"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="12.1"
@@ -74,6 +75,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/text_duration_week"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="12"
@@ -112,6 +114,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
+                                android:id="@+id/text_duration_int"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="12"
@@ -122,6 +125,7 @@
                                 android:textSize="16sp"/>
 
                             <TextView
+                                android:id="@+id/text_duration_fractional"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="1/4"
@@ -239,6 +243,7 @@
 
         <!--购买记录-->
         <android.support.v7.widget.CardView
+            android:id="@+id/view_purchase"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="10dp"
@@ -361,7 +366,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/text_courses_"
+                                android:id="@+id/text_courses_price"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="实付款： ￥19.9"
@@ -371,7 +376,7 @@
                                 android:textSize="14sp"/>
 
                             <TextView
-                                android:id="@+id/text_courses_price"
+                                android:id="@+id/text_courses_num"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="【2人】"
